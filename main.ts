@@ -10,14 +10,14 @@ fs.writeFileSync('./output/unverified.txt', '');
 
 const tokens : string[] = fs.readFileSync('tokens.txt', 'utf-8').replace(/\r/gi, '').split("\n");
 
-var verifiedArr : string[] = [];
-var unverifiedArr :  string[] = [];
-var invalidArr :  string[] = [];
-var nitroArr : string[] = [];
+let verifiedArr : string[] = [];
+let unverifiedArr :  string[] = [];
+let invalidArr :  string[] = [];
+let nitroArr : string[] = [];
 
-var json1 : any;
+let json1 : any;
 
-var i : number = 0;
+let i : number = 0;
 
 setInterval(function()
 {
@@ -47,7 +47,7 @@ function check(token: string)
         }
     }, (error : string, response : string, body : string) => {
         if(!body) return;
-        var json = JSON.parse(body);
+        let json = JSON.parse(body);
         json1 = json;
         if(!json.id)  
         {
@@ -73,7 +73,7 @@ function check(token: string)
         }
     }, (error : string, response : string, body : string) => {
         if(!body) return;
-        var json = JSON.parse(body);
+        let json = JSON.parse(body);
         if(json.length == 1) 
         {
             if(config.usernames) nitroArr.push(token + " | username: " + json1.username + "#" + json1.discriminator + "\n");
