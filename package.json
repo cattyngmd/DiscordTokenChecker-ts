@@ -1,0 +1,17 @@
+{
+  "name": "discordtockenchecker",
+  "version": "0.0.1",
+  "scripts": {
+    "compile-typescript": "tsc",
+    "start": "node ./output/script.js"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.2",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "fs": "^0.0.1-security",
+    "request": "^2.88.2"
+  }
+}
