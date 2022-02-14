@@ -31,7 +31,7 @@ coverage
 # Bower dependency directory (https://bower.io/)
 bower_components
 
-# node-waf configuration
+# node-waf config
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Application output
+build
+output

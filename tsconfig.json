@@ -1,8 +1,14 @@
 {
     "compilerOptions": {
       "noImplicitAny": true,
+      "module": "CommonJS",
+      "target": "ES5",
       "strictNullChecks": true,
       "resolveJsonModule": true,
       "esModuleInterop": true,
-    }
+      "outDir": "build",
+      "allowSyntheticDefaultImports": true
+    },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules","build"]
   }
